@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block body_block %}
+<div class="jumbotron">
+  <h1>Personal Bank Loan Customer Prediction </h1>
+  <head>
+    Please enter repective fields
+  </head>
+
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">upload</button>
+    </form>
+  </div>
+{% endblock %}

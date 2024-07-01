@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="jumbotron">
+    <h1>Personal Bank Loan Customer Prediction </h1>
+    <div class="fieldWrapper">
+      <h2>For the values</h2>
+      <p>Age:{{data_age}}</p>
+      <p>Experience:{{data_exp}}</p>
+      <p>Income:{{data_in}}</p>
+      <p>Family:{{data_fam}}</p>
+      <p>CCAvg:{{data_cca}}</p>
+      <p>Education:{{data_edu}}</p>
+      <p>Mortgage:{{data_mor}}</p>
+      <p>CDAccount:{{data_cda}}</p>
+      <p>OnlineAccount:{{data_oa}}</p>
+
+      <br>
+
+      <!-- <p> The Predicted Charge is :{{out}}</p> -->
+      {% if out == 1 %}
+        </b> Is this Customer will accept the Personal Loan: <b>Yes</b></p>
+      {% else %}
+        </b> Is this Customer will accept the Personal Loan:<b>No</b></p>
+
+      {% endif %}
+
+    <a  href="{% url 'ckdApp:ckd' %}">Personal Bank Loan Customer Prediction</a>
+    <br>
+</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load staticfiles %}
+<div class="jumbotron">
+    <h1>Well Done!! </h1>
+    <div class="fieldWrapper">
+    <p><strong>Talkative</strong>: {{result.0}}</p>
+    <p><strong>Less Talkative</strong>: {{result.1}}</p>
+    {% if not result1 %}
+      <p><strong>Filrt Percentage by </strong> {{result.0}}: Wonderfull No Filrting</p>
+    {% else %}
+      <p><strong>Filrt Percentage by </strong> {{result.0}}: {{result.2}}</p>
+    {% endif %}
+    {% if not result1  %}
+      <p><strong>Filrt Percentage by </strong> {{result.1}}: Wonderfull No Filrting</p>
+    {% else %}
+      <p><strong>Filrt Percentage by </strong> {{result.1}}: {{result.3}}</p>
+    {% endif %}
+    <p><strong>Most Active Date</strong>: {{stats.0}}</p>
+    <p><strong>Most Active Day</strong>: {{stats.1}}</p>
+    <p><strong>Most Active Hour</strong>: {{stats.2}}</p>
+    <p><strong>Average Number of Message per Day</strong>: {{stats.3}}</p>
+    <p><strong>Media Shared Freak</strong>: {{stats1.0}}</p>
+    <p><strong>Message Deleted Freak</strong>: {{stats1.1}}</p>
+    <p><strong>Missed Voice Call Count</strong>: {{stats1.2}}</p>
+    <p><strong>Missed Video Call Count</strong>: {{stats1.3}}</p>
+    <p>DateWise Message Count</p>
+    <img src="date_chart.png" alt="Date_Chart">
+    {% if media_count == "No Media were shared" %}
+      <p><strong>Media Count</strong>: {{media_count}}</p>
+    {% else %}
+      <p><strong>Media Count</strong>
+        <img src="media_count.png" alt="media_count">
+    {% endif %}
+    {% if msg_deleted_count == "No message was deleted" %}
+      <p><strong>Deleted message Count</strong>: {{msg_deleted_count}}</p>
+    {% else %}
+      <p><strong>Deleted message Count</strong>:</p>
+      <img src="msg_deleted_count.png" alt="msg_deleted_count">
+    {% endif %}
+    {% if voice_call_count == "No Missed Voice Call" %}
+      <p><strong>Missed Voice Call Count:</strong>: {{voice_call_count}}</p>
+    {% else %}
+      <p><strong>Missed Voice Call Count:</strong>:</p>
+      <img src="voice_call_count.png" alt="voice_call_count">
+    {% endif %}
+    {% if video_call_count == "No Missed Video Call"%}
+      <p><strong>Missed Video Call Count:</strong>: {{video_call_count}}</p>
+    {%else%}
+      <p><strong>Missed Voice Call Count:</strong>:</p>
+      <img src="video_call_count.png" alt="video_call_count">
+    {% endif %}
+    </div>
+
+    <a  href="{% url 'app_uplaod:image_upload' %}">Upload_TextFile</a>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="jumbotron">
+
+
+<h1>Topic Modelling</h1>
+<br>
+  {% for i,index ,topic in topiresult.itertuples %}
+    {{index}}:{{topic}}
+<br>
+  {%endfor%}
+
+<h1>Sentimental Report and Wordcloud</h1>
+
+      <h2>Echo_ White</h2>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'sentimental_image/sentiment_Echo_White.png' %}"/>
+      <br>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'wordcloudimage/wordcloud_Echo_White.PNG' %}"/>
+      <br>
+      <h2>Fire 8 HD</h2>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'sentimental_image/sentiment_Fire8HD.png' %}"/>
+      <br>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'wordcloudimage/wordcloud_Fire8HD.PNG' %}"/>
+      <br>
+      <h2>Fire Tablet for kids 7</h2>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'sentimental_image/sentiment_Firekids7.png' %}"/>
+      <br>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'wordcloudimage/wordcloud_Firekids7.PNG' %}"/>
+      <br>
+      <h2>FireTV</h2>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'sentimental_image/sentiment_FireTV.png' %}"/>
+      <br>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'wordcloudimage/wordcloud_FireTV.PNG' %}"/>
+      <br>
+      <h2>Fire Table 7</h2>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'sentimental_image/sentiment_FireTablet_7.png' %}"/>
+      <br>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'wordcloudimage/wordcloud_FireTablet_7.PNG' %}"/>
+      <br>
+      <h2>Kindle Fire 10</h2>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'sentimental_image/sentiment_KindelFire10.png' %}"/>
+      <br>
+      <img  class="mx-auto d-block" style="width: 900px; height: 450px" alt="Date_ Chart" src= "{% static 'wordcloudimage/wordcloud_KindelFire10.PNG' %}"/>
+      <br>
+
+{%endblock%}
+</div>

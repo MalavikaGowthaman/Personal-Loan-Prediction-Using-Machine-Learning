@@ -1,0 +1,32 @@
+
+
+Step1:cmd
+django-admin startproject ckdProject
+
+Step2:cmd
+cd ckdProject
+
+Step3:cmd
+django-admin startapp ckdApp
+
+Step4:procedure
+change setting 
+
+Step5:cmd
+python manage.py migrate
+
+step6:cmd
+python manage.py makemigrations ckdApp
+
+Step7:procedure
+createsuperuser project
+
+Step8:
+python manage.py createsuperuser
+
+step9:
+python manage.py migrate --run-syncdb
+
+step10:to run whole project
+python manage.py runserver
+

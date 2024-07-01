@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="">
+  <br>
+  <br>
+</div>
+<table class="table table-dark table-striped table-left" align="left">
+            <tr>
+              <th>Sl.No</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Text</th>
+              <th>Name</th>
+              <th>Scores</th>
+              <th>compound</th>
+              <th>Negetive</th>
+              <th>Positive</th>
+              <th>Netural</th>
+              <th>comp_score</th>
+              <th>Topic</th>
+            </tr>
+            {% for slno,date,time,text,name,scores,compound,negetive,positive, neutral,compscore,topic in dataset.itertuples %}
+
+
+            <tr>
+              <td>{{slno}}</td>
+              <td> {{date}}</td>
+              <td>{{time}}</td>
+              <td>{{text}} </td>
+              <td>{{name}}</td>
+              <td>{{scores}}</td>
+              <td>{{compound}}</td>
+              <td>{{negetive}}</td>
+              <td>{{positive}}</td>
+              <td>{{neutral}}</td>
+              <td>{{compscore}}</td>
+              <td>{{topic}}</td>
+            </tr>
+
+            {% endfor%}
+
+      </table>
+
+{% endblock %}
