@@ -2,11 +2,17 @@
 🧠 Build machine learning models to predict personal loan customers using key applicant details:
 
 🎂 Age
+
 🧑‍💼 Experience
+
 💵 Income
+
 👨‍👩‍👧‍👦 Family size
+
 💳 CCAvg (average credit card spending)
+
 🎓 Education
+
 🏠 Mortgage
 🏦 Personal Loan
 📈 Securities Account
