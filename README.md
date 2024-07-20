@@ -2,17 +2,11 @@
 🧠 Build machine learning models to predict personal loan customers using key applicant details:
 
 🎂 Age
-
 🧑‍💼 Experience
-
 💵 Income
-
 👨‍👩‍👧‍👦 Family size
-
 💳 CCAvg (average credit card spending)
-
 🎓 Education
-
 🏠 Mortgage
 🏦 Personal Loan
 📈 Securities Account
@@ -21,6 +15,7 @@
 💳 Credit Card Ownership
 
 🔍 𝐒𝐭𝐞𝐩-𝐛𝐲-𝐒𝐭𝐞𝐩 Guide to Predicting Personal Loan Customers with Machine Learning 🔍
+
 👉 𝐃𝐚𝐭𝐚 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧: Gather and preprocess historical loan application data. 📊
 👉 𝐃𝐚𝐭𝐚 𝐏𝐫𝐞𝐩𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠: Clean and transform data (fix CCAvg and Experience values) 🧹
 👉 𝐅𝐞𝐚𝐭𝐮𝐫𝐞 𝐒𝐞𝐥𝐞𝐜𝐭𝐢𝐨𝐧: Identify the most relevant features influencing loan approval using RFE (Recursive Feature Elimination). 🔍
@@ -33,6 +28,7 @@
 👉 𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭: Integrate the model into a user-friendly application or system. 🌐
 
 🚀 𝐆𝐨𝐚𝐥:
+
 ✅ Enhance the efficiency and accuracy of evaluating customers' potential for personal loans.
 ✅ Benefit bank employees and lending institutions by streamlining the decision-making process.
 
