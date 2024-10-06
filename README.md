@@ -1,3 +1,6 @@
+# Personal Loan Eligibility Customer Prediction using Machine Learning
+![Screenshot 2024-07-01 151734](https://github.com/user-attachments/assets/67870491-e510-49b1-aa54-899f334ec314)
+
 🎯 𝐎𝐛𝐣𝐞𝐜𝐭𝐢𝐯𝐞:
 🧠 Build machine learning models to predict personal loan customers using key applicant details:
 
